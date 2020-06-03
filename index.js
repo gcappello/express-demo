@@ -31,4 +31,4 @@ if (app.get('env') === 'development') {
 app.use(logger);
 
 const port = process.env.PORT || 3000;
-router.listen(port, () => console.log(`Listening on port ${port}...`));
+app.listen(port, () => console.log(`Listening on port ${port}...`));
